@@ -1,52 +1,65 @@
-<html>
-    <head>
-        <title>Desbravando o Mundo HTML</title>
-    </head>
-    <hr>
-    
-    
-    <body>
-        <header><h1>Curso de HTML</h1></header>
-    <hr>    
-        <!-- Aqui tem comentário-->
-        <nav>Meu trajeto do zero até onde eu conseguir alcançar </nav>
-        <section><p><b>Estou aprendendo sobre HTML</b>. Espero desvendar os mistérios da WEB. </section>
-        <hr style="width: 50%; margin-left: 0;">
-       <!--Todos os links de orações chama a página da Santa Sé -->
-<dl>
-    <dt>Orações Católicas </dt>
-    <dd><p>Sempre reze, sempre. Nunca deixe de agradecer a Nosso Senhor pelas vitórias em sua vida.</p></dd> 
-    <dd><a href="https://www.vaticannews.va/pt/oracoes/pai-nosso.html">Oração Pai Nosso </a></dd>
-    <dd><a href="https://www.vaticannews.va/pt/oracoes/ave-maria.html">Oração Ave Maria </a></dd>
-    <dd><a href="https://www.vaticannews.va/pt/oracoes/angelus.html">Oração Angelus </a></dd>
-    <dd><a href="https://www.vaticannews.va/pt/oracoes/salve-rainha.html">Oração Salve Rainha </a></dd>
-<hr style="width: 50%; margin-left: 0;">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Desbravando o Mundo HTML</title>
+    <!-- Conecta o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">       
+</head>
+<body>
+
+    <nav>Meu trajeto do zero até onde eu conseguir alcançar</nav>
+
+    <!-- Corrigido: adicionado </p> antes de fechar a section -->
+    <section>
+        <p><b>Estou aprendendo sobre HTML</b>. Espero desvendar os mistérios da WEB.</p>
+    </section>
+
+    <hr style="width: 50%; margin-left: 0;">
+
+    <!-- Todos os links de orações chamam a página da Santa Sé -->
+    <h3>Orações Católicas</h3>
+    <p>Sempre reze, sempre. Nunca deixe de agradecer a Nosso Senhor pelas vitórias em sua vida.</p>
+
+    <!-- DIV PAI QUE VAI COLOCAR TUDO LADO A LADO -->
+    <div class="conteudo-oracoes">
+        
+        <!-- BLOCO DAS IMAGENS (Fica à Esquerda) -->
+        <div class="bloco-imagens">
+            <img src="https://www.vaticannews.va/content/dam/vaticannews/preghiere/20171204_BAV_Pal.lat.537_0252_fa_0125v_PADRE%20NOSTRO.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.750.422.jpeg" alt="Imagem Pai Nosso" style="width: 250px; height: auto;">
+            <img src="https://www.vaticannews.va/content/dam/vaticannews/preghiere/20171204_BAV_Vat.lat.50_0668_fa_0332v_AVE%20MARIA.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.750.422.jpeg" alt="Imagem Ave Maria" style="width: 250px; height: auto;">
+        </div>
+
+        <!-- BLOCO DOS LINKS (Fica à Direita) -->
+        <dl class="bloco-links">
+            <dd><a href="https://www.vaticannews.va/pt/oracoes/pai-nosso.html">Oração Pai Nosso</a></dd>
+            <dd><a href="https://www.vaticannews.va/pt/oracoes/ave-maria.html">Oração Ave Maria</a></dd>
+            <dd><a href="https://www.vaticannews.va/pt/oracoes/angelus.html">Oração Angelus</a></dd>
+            <dd><a href="https://www.vaticannews.va/pt/oracoes/salve-rainha.html">Oração Salve Rainha</a></dd>
+        </dl>
+
+    </div>
+
+    <!-- Lista do Santo Terço com sua tag <dl> envelopando -->
+    <dl>
+        <dt>Santo Terço</dt>
+        <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_gaudiosi_po.html">Mistério Gozoso | Segunda e Sábado</a></dd>
+        <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_dolorosi_po.html">Mistério Doloroso | Terça e Sexta</a></dd>
+        <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_gloriosi_po.html">Mistério Glorioso | Quarta e Domingo</a></dd>
+        <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_luminosi_po.html">Mistério Luminoso | Quinta</a></dd>
+    </dl>
+
+    <hr style="width: 50%; margin-left: 0;">   
 
 
 
 
-    <dt>Santo Terço </dt>
-    <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_gaudiosi_po.html">Mistério Gozoso | Segunda e Sábado</a></dd>
-    <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_dolorosi_po.html">Mistério Doloroso | Terça e Sexta</a></dd>
-    <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_gloriosi_po.html">Mistério Glorioso | Quarta e Domingo</a></dd>
-    <dd><a href="https://www.vatican.va/special/rosary/documents/misteri_luminosi_po.html">Mistério Luminoso | Quinta</a></dd>
-<hr style="width: 50%; margin-left: 0;">
-
-</dl>
-     
 
 
 
 
 
-
-
-
-
-
-
-
-<!--Desnecessário fazer rodapé, somente se for pedido pelo cliente-->
+    <!--Desnecessário fazer rodapé, somente se for pedido pelo cliente-->
         <footer>
             Rádio Santo FM - Rondonópolis - MT - Brasil <a href="https://santofm.ouviradio.com/">Ouvir Rádio Santo FM</a>
         </footer>

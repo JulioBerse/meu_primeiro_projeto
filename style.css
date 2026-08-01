@@ -1,0 +1,30 @@
+/* Conteúdo do arquivo style.css */
+hr {
+    width: 50%;
+    border: 1px solid blue;
+    margin: 20px auto;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Transforma o contêiner em uma linha lado a lado */
+.conteudo-oracoes {
+    display: flex; /* Mágica que coloca os blocos lado a lado */
+    align-items: flex-start; /* Alinha o topo das imagens com o topo do texto */
+    gap: 30px; /* Cria um espaço de 30px entre as imagens e os links */
+}
+
+/* Garante que as duas imagens fiquem uma embaixo da outra na coluna da esquerda */
+.bloco-imagens {
+    display: flex;
+    flex-direction: column; /* Coloca uma imagem em cima da outra */
+    gap: 10px; /* Espaço entre as duas imagens */
+}
+
+/* Ajusta o alinhamento e remove margens padrão da lista */
+.bloco-links {
+    margin: 0;
+}
